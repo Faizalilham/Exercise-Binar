@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Exercise</string>
+    <string name="tittle">Holla Guys</string>
+    <string name="subTittle">Here you can calculate BMI and student average score</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="enter_nim">Enter Nim</string>
+    <string name="enter_age">Enter Age</string>
+    <string name="enter_body_height">Enter Height</string>
+    <string name="enter_body_weigth">Enter Weight</string>
+    <string name="enter_value_UTS">Enter UTS Value</string>
+    <string name="enter_value_UAS">Enter UAS Value</string>
+    <string name="enter_value_Task">Enter Task Value</string>
+    <string name="tv_instruction">Please select the calculation first</string>
+    <string name="calculate">Calculate</string>
+    <string name="reset">Reset</string>
+    <string-array name="calculate">
+        <item>BMI</item>
+        <item>Student Average Score</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/blue"
+    tools:context=".MainActivity">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           android:layout_weight="4">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/tittle"
+               android:textSize="@dimen/sp20"
+               android:textColor="@color/white"
+               android:textStyle="bold"
+               android:fontFamily="@font/poppins_regular"
+               android:layout_gravity="center"
+               android:layout_marginTop="@dimen/dp20"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/subTittle"
+               android:textSize="@dimen/sp16"
+               android:textColor="@color/white"
+               android:textAlignment="center"
+               android:fontFamily="@font/poppins_regular"
+               android:layout_gravity="center_horizontal" />
+
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           android:background="@drawable/bg_main"
+           android:layout_marginTop="@dimen/dp15"
+           android:padding="@dimen/dp10"
+           android:layout_weight="1">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/tv_instruction"
+               android:textSize="@dimen/sp16"
+               android:textColor="@color/blue"
+               android:textAlignment="center"
+               android:fontFamily="@font/poppins_regular"
+               android:layout_gravity="center_horizontal" />
+
+           <com.google.android.material.textfield.TextInputLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="@dimen/dp10"
+               android:hint="@string/calculate"
+               style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+               <AutoCompleteTextView
+                   android:id="@+id/tvCalculate"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:enabled="false"
+                   android:text="@string/calculate"
+                   android:textColor="@color/black"
+                   android:inputType="none"
+                   android:fontFamily="@font/poppins_regular"/>
+           </com.google.android.material.textfield.TextInputLayout>
+
+
+           <com.google.android.material.textfield.TextInputLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+               app:endIconMode="clear_text"
+               android:layout_marginTop="@dimen/dp5">
+               <com.google.android.material.textfield.TextInputEditText
+                   android:id="@+id/etAge"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint="@string/enter_age"
+                   android:visibility="gone"
+                   android:fontFamily="@font/poppins_regular"
+                   android:inputType="number"/>
+           </com.google.android.material.textfield.TextInputLayout>
+
+           <com.google.android.material.textfield.TextInputLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+               app:endIconMode="clear_text"
+               android:layout_marginTop="@dimen/dp5">
+               <com.google.android.material.textfield.TextInputEditText
+                   android:id="@+id/etHeight"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint="@string/enter_body_height"
+                   android:visibility="gone"
+                   android:fontFamily="@font/poppins_regular"
+                   android:inputType="number"/>
+           </com.google.android.material.textfield.TextInputLayout>
+
+           <com.google.android.material.textfield.TextInputLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+               app:endIconMode="clear_text"
+               android:layout_marginTop="@dimen/dp5">
+               <com.google.android.material.textfield.TextInputEditText
+                   android:id="@+id/etWeight"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint="@string/enter_body_weigth"
+                   android:visibility="gone"
+                   android:fontFamily="@font/poppins_regular"
+                   android:inputType="number"/>
+           </com.google.android.material.textfield.TextInputLayout>
+
+           <com.google.android.material.textfield.TextInputLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+               app:endIconMode="clear_text">
+               <com.google.android.material.textfield.TextInputEditText
+                   android:id="@+id/etName"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:visibility="gone"
+                   android:hint="@string/enter_name"
+                   android:fontFamily="@font/poppins_regular"
+                   android:inputType="text"/>
+           </com.google.android.material.textfield.TextInputLayout>
+           <com.google.android.material.textfield.TextInputLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+               app:endIconMode="clear_text"
+               android:layout_marginTop="@dimen/dp5">
+               <com.google.android.material.textfield.TextInputEditText
+                   android:id="@+id/etNim"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint="@string/enter_nim"
+                   android:visibility="gone"
+                   android:fontFamily="@font/poppins_regular"
+                   android:inputType="number"/>
+           </com.google.android.material.textfield.TextInputLayout>
+
+           <com.google.android.material.textfield.TextInputLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+               app:endIconMode="clear_text"
+               android:layout_marginTop="@dimen/dp5">
+               <com.google.android.material.textfield.TextInputEditText
+                   android:id="@+id/etUTS"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint="@string/enter_value_UTS"
+                   android:visibility="gone"
+                   android:fontFamily="@font/poppins_regular"
+                   android:inputType="number"/>
+           </com.google.android.material.textfield.TextInputLayout>
+
+           <com.google.android.material.textfield.TextInputLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+               app:endIconMode="clear_text"
+               android:layout_marginTop="@dimen/dp5">
+               <com.google.android.material.textfield.TextInputEditText
+                   android:id="@+id/etUAS"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint="@string/enter_value_UAS"
+                   android:visibility="gone"
+                   android:fontFamily="@font/poppins_regular"
+                   android:inputType="number"/>
+           </com.google.android.material.textfield.TextInputLayout>
+
+           <com.google.android.material.textfield.TextInputLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+               app:endIconMode="clear_text"
+               android:layout_marginTop="@dimen/dp5">
+               <com.google.android.material.textfield.TextInputEditText
+                   android:id="@+id/etTask"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint="@string/enter_value_Task"
+                   android:visibility="gone"
+                   android:fontFamily="@font/poppins_regular"
+                   android:inputType="number"/>
+           </com.google.android.material.textfield.TextInputLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+
+               <com.google.android.material.button.MaterialButton
+                   android:id="@+id/btnCalculate"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="@string/calculate"
+                   android:textAllCaps="false"
+                   android:layout_weight="1"
+                   android:visibility="gone"
+                   android:backgroundTint="@color/blue"
+                   android:layout_margin="@dimen/dp5"
+                   android:fontFamily="@font/poppins_regular"/>
+               <com.google.android.material.button.MaterialButton
+                   android:id="@+id/btnReset"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="@string/reset"
+                   android:textAllCaps="false"
+                   android:layout_weight="1"
+                   app:strokeColor="@color/blue"
+                   android:textColor="@color/blue"
+                   app:strokeWidth="1dp"
+                   android:visibility="gone"
+                   style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                   android:layout_margin="@dimen/dp5"
+                   android:fontFamily="@font/poppins_regular"/>
+
+           </LinearLayout>
+
+           <TextView
+               android:id="@+id/tvResult"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="@dimen/sp18"
+               android:layout_gravity="center"
+               android:textColor="@color/black"
+               android:fontFamily="@font/poppins_regular"
+               />
+
+
+       </LinearLayout>
+
+   </LinearLayout>
+
+
+</ScrollView>
